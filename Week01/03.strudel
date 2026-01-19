@@ -1,15 +1,15 @@
 // @title W01-03
 // @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
 // @by vigliensoni
-// @date Jan 3, 2026
+// @date Jan 18, 2026
 
 // 03
 setcps(130/60/4)
 
-$: s("bd!4 [bd*4]!2 bd!2")
-  .slow(2)
-  .bank("dmx")
+s("bd!3 [mt*2]!2 hh!2")
+.slow(2)
+.bank("RolandTr909")
 
-$: s("[~ sd]!2")
-  .gain(0.75)
-  .bank("akailinn")
+s("[~ bd]!2")
+.gain(0.75)
+.bank("RolandTr909")

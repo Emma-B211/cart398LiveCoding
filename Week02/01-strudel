@@ -1,0 +1,22 @@
+// @Drum Beats W02-01
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by vigliensoni
+// @date Jan 20, 2026
+
+
+//01
+setcps(130/60/4)
+samples({
+  click:'https://cdn.freesound.org/previews/333/333041_3908740-lq.mp3',
+  can: 'https://cdn.freesound.org/previews/184/184088_4948-lq.mp3',
+  drum: 'https://cdn.freesound.org/previews/75/75385_377011-lq.mp3',
+  snare: 'https://cdn.freesound.org/previews/249/249264_4559525-lq.mp3'
+  
+})
+
+s(" can*4/2 drum drum [drum]*4 snare!2?, click!4? ")
+
+ //$:s("drum!2 [drum]*3").sound("jazz").gain(0.7)
+
+//$:s("can(2,4) drum(2,6) snare(2,8)").gain(1).sound("sawtooth")
+//$:s(can!2, snare!4?).gain(1).lpf(400).sound("rim")

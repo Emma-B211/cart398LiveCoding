@@ -1,0 +1,23 @@
+// @Beats W02-01
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by vigliensoni
+// @date Jan 23, 2026
+
+
+//02
+
+setcps(130/60/4)
+samples({
+  drum:  'https://cdn.freesound.org/previews/208/208560_528100-lq.mp3',
+      click: 'https://cdn.freesound.org/previews/751/751081_12805576-lq.mp3',
+  pluck: 'https://cdn.freesound.org/previews/381/381779_4398688-lq.mp3',
+  violin: 'https://cdn.freesound.org/previews/56/56019_692375-lq.mp3'
+  //synth: 'https://cdn.freesound.org/previews/784/784133_7061184-lq.mp3'
+})
+   
+
+
+$:s("drum(5,8) pluck(2,8), violin(3,8)").sound("oh").gain(0.7)
+
+$:s("drum(4,4) pluck(2,4) violin(2,4)").sound("bd").gain(1)
+$: note("e b g f  g b f e").sound("piano").scale("C:major") 

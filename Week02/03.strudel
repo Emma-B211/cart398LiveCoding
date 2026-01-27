@@ -1,0 +1,22 @@
+// @Mystic W02-01
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by vigliensoni
+// @date Jan 26, 2026
+
+//03
+
+setcps(130/60/4)
+setcps(130/60/4)
+samples({
+humming:'https://cdn.freesound.org/previews/816/816687_11764891-lq.mp3',
+  cello: ['https://cdn.freesound.org/previews/372/372744_2475994-lq.mp3',
+  'https://cdn.freesound.org/previews/246/246931_6552981-lq.mp3',
+  'https://cdn.freesound.org/previews/372/372844_2475994-lq.mp3'],
+  drum:'https://cdn.freesound.org/previews/208/208549_528100-lq.mp3'
+  
+})
+
+setcps(130/60/4)
+
+$:s("cello:1!2 cello:2!4 cello:3!4?").sound("bd")
+$:s("humming!2").gain(0.2)

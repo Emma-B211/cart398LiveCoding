@@ -1,0 +1,17 @@
+// @Drum Beats W02-01
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Emma
+// @date Jan 31, 2026
+
+
+//01
+setcps(130/60/4)
+samples({
+  piano:'https://cdn.freesound.org/previews/843/843777_5674468-lq.mp3',
+  drums:'https://cdn.freesound.org/previews/843/843151_6637765-lq.mp3',
+  boom:'https://cdn.freesound.org/previews/843/843251_71257-lq.mp3'
+})
+
+$: s("boom").scrub("{<0.1! 5. 0.2! 5:3> .25@5 0.3!4 <0.1:3 0.2:2>}").gain(0.5).sound("jazz")
+$: s("piano").speed("[4 2 1 5 -2 -4]").fast(1.0).gain(0.2)
+

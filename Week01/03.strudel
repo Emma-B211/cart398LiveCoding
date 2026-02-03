@@ -6,10 +6,10 @@
 // 03
 setcps(130/60/4)
 
-s("bd!3 [mt*2]!2 hh!2")
+$: s("bd!3 [mt*2]!2 hh!2")
 .slow(2)
 .bank("RolandTr909")
 
-s("[~ bd]!2")
+$: s("[~ bd]!2")
 .gain(0.75)
 .bank("RolandTr909")

@@ -1,0 +1,10 @@
+// @fantasy life  W04-01
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Emma
+// @date February 7, 2026
+
+//02
+setcps(130/60/4)
+
+$: n("9 5 8 1 ").scale("c:major").sound("piano").gain(0.4)
+$: n("2 6 1 8 4").scale("g:major").sound("gm_violin").gain(0.3).every(2, x => x.fast(2))

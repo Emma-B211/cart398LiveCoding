@@ -1,7 +1,7 @@
 // @melody  W04-01
 // @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
-// @by vigliensoni
-// @date Jan 20, 2026
+// @by Emma
+// @date Febraury 3 2026
 
 setcps(130/60/4)
  //$: n("5 4 8 2 <5 2!2 4> 4 6").scale("g: egyptian").sound("fmpiano").gain(0.4).slow(1)

@@ -1,0 +1,12 @@
+// @Game Jam W04-01
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Emma
+// @date February 8, 2026
+
+//03
+setcps(130/60/4)
+samples({ beats: 'https://cdn.freesound.org/previews/70/70062_395040-lq.mp3'})
+$: n("1 3 7 9 5 6").scale("e:major").s("piano").every(2, x => x.fast(2))
+$: n("9 4 3 2 6 8").scale("a:major").s("piano").every(4, x => x.fast(2))
+
+$: sound("beats").splice(4, "<[0 0] [<1 2> 1] [<2 3> 4]>")

@@ -1,0 +1,15 @@
+// @rainy night W04-01
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Emma
+// @date February 9, 2026
+
+//04 
+
+setcps(130/60/4)
+samples({
+  rain:'https://cdn.freesound.org/previews/486/486257_2524442-lq.mp3'
+})
+$: n("4 8 2 6 8 4").scale("f:minor").sound("piano").every(4, x => x.fast(2)).gain(0.4)
+$: n("2 8 4 6 4 2").scale("c:minor").sound("piano").every(2, x => x.slow(4)).gain(0.4)
+$: n("5 2 7 8 3 1").scale("g:minor").sound("jazz").every(6, x => x.fast(2)).gain(0.2)
+$: s("rain").begin("<0 0.25 .50 .75>").gain(0.1)

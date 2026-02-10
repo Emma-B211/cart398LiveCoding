@@ -1,0 +1,11 @@
+// @rlullaby W05-01
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Emma
+// @date February 10, 2026
+
+
+
+setcps(130/60/5)
+//Emma
+//$:n("2 4 8 6 4 2 8").scale("c:minor").sound("piano").gain(0.4).lpf(800).pan(tri.segment(2))
+//$:n("4 8 2 6 8 4 6").scale("c:minor").sound("piano").lpf(800).pan(square.fast(2))

@@ -1,0 +1,16 @@
+// @ metal tin W05-01
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Emma
+// @date February 14, 2026
+
+//04
+
+setcps(90/20/5)
+
+$:sound("slitdrum:4*8").gain(0.4).every(2, x => x.fast(2))
+
+$: sound("metal: 2*6").gain(0.4).every(4, x => x.fast(2))
+$: sound("wind:2*2").gain(0.3).every(6, x => x.fast(2))
+
+
+$: sound("metal").gain(0.4).every(2, x => x.fast(2))

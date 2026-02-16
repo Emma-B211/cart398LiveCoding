@@ -3,6 +3,9 @@
 // @by Emma
 // @date February 13, 2026
 
+
+//02
+
 setcps(90/20/5)
 
 $:sound("bd:1*4").gain(0.4).every(2, x => x.fast(2))

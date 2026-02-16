@@ -1,0 +1,15 @@
+// @ Uncanny Environment W05-01
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Emma
+// @date February 15, 2026
+
+
+//04
+
+setcps(90/20/5)
+
+$:sound("bongo:4*8").gain(0.4).every(2, x => x.fast(2))
+$: sound("handbells: 2*6").gain(0.4).every(4, x => x.fast(2))
+$: sound("kalimba:2*2").gain(0.3).every(6, x => x.fast(2))
+
+$: n("4 8 2 6 8 4").scale("f:minor").sound("piano").gain(0.4).speed("1 2 4 1 -2 -4").fast(1.5)

@@ -6,11 +6,12 @@
 
 //02
 
+
 setcps(90/20/5)
 
 $:sound("bd:1*4").gain(0.4).every(2, x => x.fast(2))
 
-$: sound("lt: 1*2").gain(0.4).every(4, x => x.fast(2))
-$: sound("oh:1*4").gain(0.3).every(6, x => x.fast(2))
+$: sound("lt: 1*2").gain(0.4).every(4, x => x.fast(2)).pan("<0  1>")
+$: sound("oh:1*4").gain(0.3).every(6, x => x.fast(2)).pan("< 1 0>")
 
 $: sound("space").gain(0.4).every(2, x => x.fast(2))

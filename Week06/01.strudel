@@ -1,0 +1,25 @@
+// @test run W06-06
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Emma
+// @date February 22, 2026
+
+setcps(130/60/5)
+
+let lead1= stack(
+  n("4 6 8 2 5 6 ~ ~ <4 8> 4 2 6 8").scale("e:major").sound("gm_piano").gain(0.4),
+sound("bd!2  lt!4 hh!2").gain(0.4).bank("RolandTR808")
+)
+
+let lead2= stack(
+  n("8 4 6 2 <9 2> 6 4 8 2 ~~ 4 6").scale("e:major").sound("gm_piano").gain(0.4),
+  sound("bd!4  lt!6 hh!8").gain(0.4).bank("RolandTR808")
+)
+
+
+
+
+
+arrange(
+  [4,  lead1],
+  [6, lead2]
+)

@@ -1,0 +1,15 @@
+// Disco Night
+// By Emma Beldick
+
+noise(2, 0.2)
+.modulate(osc(2, 0.3), 0.2)
+.kaleid(3)
+.color(1,0,4)
+.add(
+osc(30, 0.1, 1)
+.rotate(()=> time * 0.2)
+.mult(shape(8, 0.5, 0.02))
+, 0.7)
+.out()
+
+https://hydra.ojack.xyz/?code=JTJGJTJGJTIwRGlzY28lMjBOaWdodCUwQSUyRiUyRiUyMEJ5JTIwRW1tYSUyMEJlbGRpY2slMEElMEFub2lzZSgyJTJDJTIwMC4yKSUwQS5tb2R1bGF0ZShvc2MoMiUyQyUyMDAuMyklMkMlMjAwLjIpJTBBLmthbGVpZCgzKSUwQS5jb2xvcigxJTJDMCUyQzQpJTBBLmFkZCglMEFvc2MoMzAlMkMlMjAwLjElMkMlMjAxKSUwQS5yb3RhdGUoKCklM0QlM0UlMjB0aW1lJTIwKiUyMDAuMiklMEEubXVsdChzaGFwZSg4JTJDJTIwMC41JTJDJTIwMC4wMikpJTBBJTJDJTIwMC43KSUwQS5vdXQoKQ%3D%3D
